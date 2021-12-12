@@ -63,6 +63,8 @@ public class Role {
 		this.description = description;
 	}
 
+	// Reference to understand hashCode() and equals() methods
+	// https://www.codejava.net/java-core/collections/understanding-equals-and-hashcode-in-java
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -82,7 +84,7 @@ public class Role {
 
 	@Override
 	public String toString() {
-		return "Role [name=" + name + "]";
+		return this.name;
 	}
 
 }

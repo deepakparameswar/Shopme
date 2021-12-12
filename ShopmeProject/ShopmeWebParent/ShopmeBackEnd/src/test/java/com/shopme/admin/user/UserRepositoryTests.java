@@ -125,4 +125,12 @@ public class UserRepositoryTests {
 		
 	}
 	
+	@Test
+	public void testGetUserByEmail() {
+		String email = "deepakK@domain.com";
+		User user = repo.getUserByEmail(email);
+		
+		assertThat(user).isNotNull();
+	}
+	
 }
